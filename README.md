@@ -12,8 +12,8 @@ flutter pub get
 
 ## 啟用與連入本地模擬環境  
 ```
-docker-compose up -d  
-docker exec -it firebase-emulator.cxcxc.xingming /bin/bash  
+docker-compose up -d
+docker exec -it firebase-emulator.cxcxc.xingming /bin/bash
 ```  
 
 ## 登入firebase
@@ -25,9 +25,9 @@ firebase login --reauth
 ```
 dart pub global activate flutterfire_cli
 
-PATH="$PATH":"$HOME/.pub-cache/bin"  
+PATH="$PATH":"$HOME/.pub-cache/bin"
 
-flutterfire configure  
+flutterfire configure
 ```  
 
 ## 啟用模擬器，並匯入firestore 測試資料集  

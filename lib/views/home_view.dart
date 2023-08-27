@@ -22,7 +22,7 @@ class _HomeViewState extends State<HomeView> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -35,10 +35,7 @@ class _HomeViewState extends State<HomeView> {
       // 用來新增貼文
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          showAddPostDialog(
-            context,
-            textEditingController,
-          );
+          showAddPostDialog(context);
         },
         tooltip: '新增貼文',
         child: const Icon(Icons.add),
